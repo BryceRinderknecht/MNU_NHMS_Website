@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+
+/*------------- Home Page Style Rules -------------*/
+
+/* Red stripes */
+.stripe{
+	float: left;
+	background-image: url("../images/Red_Vertical_Wide.svg");
+	height: 20px;
+	padding: 5px;
+}
+
+/* Blue current/future toggle bar */
+.toggle{
+	background-color: #8DC6E8;
+	padding: 0px;
+}
+
+/* current/future buttons */
+.tabLink {
+	font-family: "DIN Alternate Bold", "Helvetica Bold", "Arial Bold";
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top: 1px solid #238DC1;
+	border-left: 1px solid #238DC1;
+	border-right: 1px solid #238DC1;
+	border-bottom: none;
+	outline: none;
+	height: 80%;
+	width: 100%;
+	align-content: center;
+	padding: 10px 16px;
+	background-color: #8DC6E8;
+	cursor: pointer;
+	color: #003A5D;
+	font-size: 20px;
+	margin: 0 auto;
+}
+
+/* light blue spacer above buttons */
+.spacer_light{
+	height: 15px;
+	width: 100%;
+	background-color: #8DC6E8;
+}
+
+/* dark blue spacer below buttons */
+.spacer_dark{
+	height: 15px;
+	width: 100%;
+	background-color: #238DC1;
+}
+
+/* white container with 4x4 links in it */
+.container_Students{
+	padding: 40px;
+}
+
+/* Left text box inside container_Students */
+.leftText{
+	padding: auto;
+}
+
+/* First row of links on home page */
+.first{
+	margin-bottom: 20px;	
+}
+
+/*Gray border for links*/
+.quad{
+	padding: 8px;
+	width: 95%;
+	height: 95%;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Set photo and caption to 1/3rd page width */
+figure{
+	height: 100%;
+	width: 100%;
+}
+
+/* Photo Caption and Link title */
+figcaption{
+	/* font-size: 2em; */
+	color: #238DC1;
+	font-family: 'DIN Alternate Bold', 'Helvetica Bold', 'Arial Bold';
+}

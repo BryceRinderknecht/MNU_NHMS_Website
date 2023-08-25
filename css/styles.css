@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*------------- Page sections -------------*/
+
+/* Main ID for shifting page contents when menu is clicked */
+#main {
+	transition: margin-left .5s;
+}
+
+/* Dark blue header across top of page */
+header{
+	padding: 10px 0px 0px 0px;
+	text-align: center;
+	background-color: #003A5D;
+	height: 100px;
+	color: #ffffff;
+}
+
+/* Empty DIV to balance MNU's logo to the middle with the menu button on the left side */
+.headerSpacer{
+	height: 40px;
+	width: 40px;
+	float: right;
+	margin: 20px;
+}
+
+/* Banner photo */
+.banner{
+	background-repeat: no-repeat;
+}
+
+.videoWrapper{
+	position: relative;
+	padding-bottom: 56.25%;
+
+}
+.videoWrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+/* Dark blue bar across bottom of page */
+footer{
+	padding: 20px 0px 0px 20px;
+	background-color: #003A5D;
+	height: 160px;
+	margin-top: auto;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*------------- Text Style rules -------------*/
+
+h2{
+	font-family: "Le Monde Livre Std Demi", "Palatino Bold", "Georgia Bold", serif;
+	color: #EA0029;
+	font-size: 3.3em;
+	font-weight: 500;
+}
+
+p{
+	font-family: "Gotham-Book", Verdana, Tahoma;
+	color: #003A5D;
+	font-size: 1em;
+}
+ 
+/*-------------------------------------------------------------------------------------------------------*/
+/*-------------  Rules based on screen size -------------*/
+
+/* Screen sizes 375-575 pixels */
+@media (min-width: 375px){
+	.banner{
+		height: 110px;
+		background-image: url("../images/osborne576x110.jpg");
+	}
+
+	h2{
+		font-size: 1.6em;
+	}
+
+	.tabLink{
+		font-size: 14px;
+	}
+
+
+	figcaption{
+		font-size: 1.4em;
+	}
+
+	p{
+		font-size: 1em;
+}
+}
+
+/* Screen sizes 576-767 pixels */
+@media (min-width: 576px){
+	.banner{		
+		height: 180px;
+		background-image:url("../images/osborne768x180.jpg")
+	}
+
+	h2{
+		font-size: 1.8em;
+	}
+
+	figcaption{
+		font-size: 1.4em;
+	}
+
+	.tabLink{
+		font-size: 16px;
+	}
+}
+
+/* Screen sizes 768-991 pixels */
+@media (min-width: 768px){
+	.banner{		
+		height: 300px;
+		background-image:url("../images/osborne992x300.jpg");
+	}
+
+	h2{
+		font-size: 2.3em;
+	}
+
+
+	figcaption{
+		font-size: 1.4em;
+	}
+
+	.tabLink{
+		font-size: 18px;
+	}
+}
+
+/* Screen sizes 992-1199 pixels */
+@media (min-width: 992px){
+	.banner{
+		height: 500px;
+		background-image:url("../images/osborne1200x500.jpg");
+	}
+
+	h2{
+		font-size: 2.5em;
+	}
+
+	.tabLink{
+		font-size: 20px;
+	}
+
+	figcaption{
+		font-size: 2em;
+	}
+
+	p{
+		font-size: 1em;
+	}
+}
+	
+
+/* Screen sizes 1200-1399 pixels */
+@media (min-width: 1200px){
+	.banner{
+		height: 500px;
+		background-image:url("../images/osborne1600x600.jpg")
+	}
+
+	h2{
+		font-size: 3em;
+	}
+
+	.tabLink{
+		font-size: 22px;
+	}
+}
+
+
+/* This sets the max screen size to 1600 pixels */
+@media (min-width: 1600px){ 
+	#main{
+		margin: 0 auto;
+		max-width: 1600px;
+		background-clip: border-box;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+		border-radius: 0.25rem;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+	}
+	
+	.banner{
+		background-image: url("../images/osborne1600x600.jpg");
+	}
+}

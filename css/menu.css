@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+button{
+	border: none;
+	background-color: rgba(0,0,0,0.00);
+}
+.menu{
+	float: left;
+	margin: 20px;
+	height: 40px;
+	width: 40px;
+	background-image:url("../images/menu.svg");
+	background-repeat: no-repeat;
+	color:rgba(0,0,0,0.00);
+	font-size: 2em;
+}
+
+.menu:hover{
+	background-image:url("../images/menuHover.svg");
+}
+
+.sidenav {
+  	height: 100%; /* 100% Full-height */
+  	width: 0; /* 0 width - change this with JavaScript */
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Stay on top */
+  	top: 0;
+  	left: 0;
+  	background-color: #D8DFE1; 
+  	overflow-x: hidden; /* Disable horizontal scroll */
+  	padding-top: 60px; /* Place content 60px from the top */
+  	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+ 	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (min-width: 400px) {
+	.sidenav a {font-size: 14px;}
+}
+
+@media (min-width: 768px){
+	.sidenav a {font-size: 18px;}
+}
+
+@media (min-width: 992px){
+	.sidenav a {font-size: 22px;}
+}
+@media (min-width: 1200px){
+	.sidenav a {font-size: 24px;}
+}

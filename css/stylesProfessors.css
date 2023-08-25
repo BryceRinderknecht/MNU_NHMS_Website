@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.profButton {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	font-size: 15px;
+	border: solid black 2px;
+	width: 30%;
+	padding: 10px;
+	margin: 5px 0px;
+	margin-left: 2.5%;
+	text-align: center;
+	transition: width 0.2s ease-out;
+}
+		
+.active {
+	background-color: #ccc;
+	width: 62.5%;
+}
+		
+.profButton:hover {
+	background-color: #ccc;
+}
+		
+.profContent {
+	display: none;
+	overflow: hidden;
+	padding: 0px 18px;
+	background-color: #f1f1f1;
+	border: solid black 1px;
+	margin-left: 3%;
+	margin-right: 3%;
+}
