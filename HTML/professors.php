@@ -19,7 +19,7 @@
 	<div id="main">
 		<header>
 			<button class="menu"><span onclick="openNav()">Menu</span></button>
-			<a href="index.html">
+			<a href="../index.html">
 				<img src="../images/MNU_Header_Logo.svg" alt="MNU Header" height="80px">
 				<div class="headerSpacer"> </div>
 			</a>
@@ -27,11 +27,11 @@
 
 		<div id="mySidenav" class="sidenav">
   			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<a href="index.html">Home</a>
+			<a href="../index.html">Home</a>
 			<a href="https://www.mnu.edu/undergraduate-admissions/">Admissions</a>
-			<a href="advising.html">Advising</a>
-			<a href="droneTour.html">Drone Tour</a>
-			<a href="professors.php">Professors</a>
+			<a href="HTML/advising.html">Advising</a>
+			<a href="HTML/droneTour.html">Drone Tour</a>
+			<a href="HTML/professors.php">Professors</a>
 		</div>
 
 		<h1>Learn more about our professors in the department!</h1>
