@@ -6,6 +6,7 @@
 /*------------- Home Page Style Rules -------------*/
 
 /* Red stripes */
+
 .stripe{
 	float: left;
 	background-image: url("../images/Red_Vertical_Wide.svg");
@@ -70,7 +71,7 @@
 }
 
 /*Gray border for links*/
-.quad{
+.containerquad{
 	padding: 8px;
 	width: 95%;
 	height: 95%;
@@ -93,4 +94,14 @@ figcaption{
 	/* font-size: 2em; */
 	color: #238DC1;
 	font-family: 'DIN Alternate Bold', 'Helvetica Bold', 'Arial Bold';
+}
+
+@media screen and (max-width: 800px){
+	.column{
+		width: 100%;
+	    display: block;
+		
+	}
+	
+	
 }

@@ -38,11 +38,11 @@
 			<a href="https://www.mnu.edu/undergraduate-admissions/">Admissions</a>
 			<a href="HTML/advising.html">Advising</a>
 			<a href="HTML/droneTour.html">Drone Tour</a>
-			<a href="HTML/professors.php">Professors</a>
+			<a href="HTML/professors.html">Professors</a>
 		</div>
 
 		<div class="banner">
-			<video autoplay muted loop id="mnuVideo">
+			<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"loop id="mnuVideo">
 				<source src="images/FinalComp.mp4" type="video/mp4">
 			</video>
 		</div>
@@ -54,15 +54,14 @@
 		<div class="container_Students">
 			<div class="row">
 					<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 leftText">
-						<div class="taggbox" style="width:80%;height:70%" data-widget-id="140269" data-tags="false" ></div><script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
 						<h2>Daily Devotional</h2>
 						<script src="http://www.verse-a-day.com/js/NLT.js"></script>
 					</div>
 			
 				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 					<div class="first row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="HTML/droneTour.html">
 									<figure>
 										<img src="images/classroom.jpg" alt="admissions thumbnail" height="100%" width="100%">
@@ -73,8 +72,8 @@
 							</div>
 						</div>
 					
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="HTML/advising.html">
 									<figure>
 										<img src="images/professor.jpg" alt="classroom thumbnail" height="100%" width="100%">
@@ -87,8 +86,8 @@
 					</div>
 				
 					<div class="second row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="https://www.mnu.edu/undergraduate-admissions/">
 									<figure>
 										<img src="images/cunninghamCenter.png" alt="cunninghamCenter" height="80%" width="100%">
@@ -99,8 +98,8 @@
 							</div>
 						</div>
 					
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="HTML/professors.html">	
 									<figure>
 										<img src="images/taylor.jpg" alt="professor thumbnail" height="100%" width="100%">
@@ -113,9 +112,9 @@
 					</div>
 
 					<div class="third row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
-								<a href="index.html">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
+								<a href="HTML/professorSchedules.html">
 									<figure>
 										<img src="images/schedule.jpeg" alt="placeholder thumbnail" height="100%" width="100%">
 										<figcaption>Professor Schedules</figcaption>
@@ -125,8 +124,8 @@
 							</div>
 						</div>
 					
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="index.html">
 									<figure>
 										<img src="images/cliffpemble.jpeg" alt="placeholder thumbnail" height="100%" width="100%">
@@ -138,8 +137,8 @@
 						</div>
 					</div>
 					<div class="fourth row">
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="index.html">
 									<figure>
 										<img src="images/osborne1600x600.jpg" alt="placeholder thumbnail" height="100%" width="100%">
@@ -150,8 +149,8 @@
 							</div>
 						</div>
 					
-						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-							<div class="container quad">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 column">
+							<div class="containerquad">
 								<a href="index.html">
 									<figure>
 										<img src="images/3dprinter.jpeg" alt="placeholder thumbnail" height="100%" width="100%">
@@ -174,10 +173,17 @@
 	
 <script>	
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
 	function openNav() {
-  		document.getElementById("mySidenav").style.width = "24%";
-		document.getElementById("main").style.marginLeft = "24%";
+		if(screen.width < 600){
+			size = screen.width;
+			document.getElementById("mySidenav").style.width = size + "px";
+			document.getElementById("main").style.marginLeft = size + "px";
+		}
+		else{
+			document.getElementById("mySidenav").style.width = "20%";
+			document.getElementById("main").style.marginLeft = "20%";
+		}
 	}
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
