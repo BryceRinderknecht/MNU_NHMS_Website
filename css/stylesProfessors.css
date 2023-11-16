@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /* Three columns side by side */
-
+.toggle{
+	background-color: #8DC6E8;
+	padding: 0px;
+}
+.spacer_dark{
+	height: 15px;
+	width: 100%;
+	background-color: #238DC1;
+}
 .column {
 	
 	float: left;
