@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>NHMS Drone Tour</title>
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">	
+  <link href="../css/menu.css" rel="stylesheet" type="text/css">
+  <link href="../css/osborneTour.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+	
+<body>
+	<div id="main">
+		<header>
+			<button class="menu" onclick="openNav()">Menu</button>
+			<a href="../index.html">
+				<img src="../images/MNU_Header_Logo.svg" alt="MNU Header" height="80px">
+				<div class="headerSpacer"> </div>
+			</a>
+		</header>
+
+		<div id="mySidenav" class="sidenav">
+  			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="osborneTour.html">Osborne Tour</a>
+			<a href="advising.html">Advising</a>
+			<a href="animals.html">Meet The Animals</a>
+			<a href="professors.html">Meet the Professors</a>
+			<a href="https://www.mnu.edu/undergraduate-admissions/">Admissions</a>
+			<a href="nhmsAlumni.html">MNU NHMS Alumni</a>
+			<a href="iPad.html">iPad Initiative</a>
+			<a href="nhmsMakerspace.html">NHMS Makerspace</a>
+		</div>
+
+		<div class="banner">
+			<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"loop id="mnuVideo">
+				<source src="../images/MNUheadervid.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="toggle">
+			<div class="spacer_dark"></div>
+		</div>
+		
+		<div class="row"> 
+			<div class="column">
+			  <img src="../images/osborne108.jpeg">
+			  <p>Osborne 108</p>
+			  <img src="../images/osborneStudyArea.jpeg">
+			  <img src="../images/3dprintermachine.jpeg">
+			  <img src="../images/osbrone204.jpeg">
+			  <img src="../images/osborne106.jpeg">
+			  
+			</div>
+			<div class="column">
+			  <img src="../images/aquatonics.jpeg">
+			  <img src="../images/chemistryStuff.jpeg">
+			  <img src="../images/kristensDesk.jpeg">
+			  <img src="../images/lab2.jpeg">
+			  <img src="../images/PTRoom.jpeg">
+			</div> 
+			<div class="column">
+			  <img src="../images/skeletonRoom.jpeg">
+			  <img src="../images/lab3.jpeg">
+			  <img src="../images/skeletonRoom2.jpeg">
+			  <img src="../images/labs.jpeg">
+			  <img src="../images/mainHallway2Floor.jpeg">
+			
+			</div>
+			<div class="column">
+			  <img src="../images/osborne104.jpeg">
+			  <img src="../images/PTRoom2.jpeg">
+			  <img src="../images/osborne118.jpeg">
+			  <img src="../images/scienceStuff2.jpeg">
+			  <img src="../images/osborne110.jpeg">
+			</div>
+		  </div>
+	
+	</div>
+	
+<script>	
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+
+	function openNav() {
+  		document.getElementById("mySidenav").style.width = "20%";
+		document.getElementById("main").style.marginLeft = "20%";
+	}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+	function closeNav() {
+  		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+	}
+</script>
+	
+</body>
+</html>
