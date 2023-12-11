@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>NHMS Professors</title>
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">	
+  <link href="../css/menu.css" rel="stylesheet" type="text/css">
+  <link href="../css/stylesProfessors.css" rel="stylesheet" type="text/css">	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+	
+<body>
+
+	<div id="main">
+		<div id="main">
+			<header>
+				<button class="menu" onclick="openNav()">Menu</button>
+				<a href="../index.html">
+					<img src="../images/MNU_Header_Logo.svg" alt="MNU Header" height="80px">
+					<div class="headerSpacer"> </div>
+				</a>
+			</header>
+	
+			<div id="mySidenav" class="sidenav">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="../index.html">Home</a>
+                  <a href="osborneTour.html">Osborne Tour</a>
+                  <a href="advising.html">Advising</a>
+                  <a href="animals.html">Meet The Animals</a>
+                  <a href="professors.html">Meet the Professors</a>
+                  <a href="https://www.mnu.edu/undergraduate-admissions/">Admissions</a>
+                  <a href="nhmsAlumni.html">MNU NHMS Alumni</a>
+                  <a href="iPad.html">iPad Initiative</a>
+                  <a href="nhmsMakerspace.html">NHMS Maker Lab</a>
+			</div>
+
+        <div >
+            <h2 class = "schedule">Dr. Speicher's Schedule</h2>
+            <p class="ps">**Schedule does not include meetings, events, etc**</p>
+            <div class="dropdown">
+                <button class="dropbtn">Other Professor Schedules</button>
+                <div class="dropdown-content">
+                <a href="drBrown.html">Dr. Brown</a>
+                <a href="drComadoll.html">Dr. Comadoll</a>
+                <a href="drCrawford.html">Dr. Crawford</a>
+                <a href="profHaleLespier.html">Prof. Hale-Lespier</a>
+                <a href="drHodges.html">Dr. Hodges</a>
+                <a href="profKing.html">Prof. King</a>
+                <a href="profKreshel.html">Prof. Kreshel</a>
+                <a href="drMantha.html">Dr. Mantha</a>
+                <a href="drMasters.html">Dr. Masters</a>
+                <a href="drSpeicher.html">Dr. Speicher</a>
+                <a href="drTaylor.html">Dr. Taylor</a>
+                </div>
+              </div>
+            
+
+        </div>
+        
+
+        <iframe src="https://outlook.office365.com/owa/calendar/48884d5e148b4f08af37a84e49fb59b6@mnu.edu/fa99c478fe3d40b7b1bbe7767d250cdc10118336220154754395/calendar.html" width="100%" height="700px"></iframe>
+	
+		
+
+    <footer>
+        <img src="../images/MNU-full-logo.png" alt="MNU Full Logo" width="30%">
+    </footer>
+    </div>
+    <script>	
+
+
+    function openNav() {
+        if(screen.width < 600){
+            size = screen.width;
+            document.getElementById("mySidenav").style.width = size + "px";
+                document.getElementById("main").style.marginLeft = size + "px";
+        }
+        else{
+            document.getElementById("mySidenav").style.width = "20%";
+            document.getElementById("main").style.marginLeft = "20%";
+        }
+    }
+        
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "auto";
+    }
+    </script>
+            
+</body>
+</html>

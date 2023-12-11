@@ -95,6 +95,20 @@ figcaption{
 	color: #238DC1;
 	font-family: 'DIN Alternate Bold', 'Helvetica Bold', 'Arial Bold';
 }
+@media screen and (max-width: 600px){
+
+	.instagram-media{
+		display: none !important;
+	}
+	p{
+		word-break: break-all;
+	}
+	
+
+	
+	
+	
+}
 
 @media screen and (max-width: 900px){
 	.column{
@@ -115,14 +129,3 @@ figcaption{
 	
 }
 
-@media screen and (max-width: 600px){
-
-	.instagram-media{
-		display: none;
-	}
-	
-
-	
-	
-	
-}
